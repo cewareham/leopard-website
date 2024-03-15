@@ -1,43 +1,5 @@
 {
-  "name": "leopard-website",
-  "version": "1.0.0",
-  "private": true,
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start",
-    "format": "prettier --write --ignore-path .gitignore ."
-  },
-  "author": "Josh Pullen",
-  "license": "ISC",
-  "dependencies": {
-    "@prisma/client": "^4.1.0",
-    "aws-sdk": "^2.1261.0",
-    "classnames": "^2.3.1",
-    "codesandbox": "^2.2.3",
-    "form-data": "^4.0.0",
-    "jszip": "^3.10.1",
-    "next": "^12.2.3",
-    "node-fetch": "^3.2.9",
-    "raw-body": "^2.5.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-syntax-highlighter": "^15.5.0",
-    "sb-edit": "^0.13.14",
-    "scratchblocks": "^3.6.0",
-    "swr": "^1.3.0"
-  },
-  "devDependencies": {
-    "@types/node": "^18.11.9",
-    "@types/react": "^18.0.15",
-    "@types/react-syntax-highlighter": "^15.5.3",
-    "autoprefixer": "^10.4.7",
-    "postcss": "^8.4.14",
-    "prettier": "^2.7.1",
-    "prisma": "^4.1.0",
-    "tailwindcss": "^3.1.6",
-    "typescript": "^4.7.4"
+    "build": "cp -R . ../public && mv ../public public"
   }
 }
